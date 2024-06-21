@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>International Radiotelephony Spelling Alphabet</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="question"></div>
+        <input type="text" id="answer"></input>
+        <div id="stats"></div>
+        <script>
+            // https://en.wikipedia.org/wiki/NATO_phonetic_alphabet
+
+            var caseInsensitive = true;
+
+            var dictionary = {
+                "alfa": "A",
+                "bravo": "B",
+                "charlie": "C",
+                "delta": "D",
+                "echo": "E",
+                "foxtrot": "F",
+                "golf": "G",
+                "hotel": "H",
+                "india": "I",
+                "juliett": "J",
+                "kilo": "K",
+                "lima": "L",
+                "mike": "M",
+                "november": "N",
+                "oscar": "O",
+                "papa": "P",
+                "quebec": "Q",
+                "romeo": "R",
+                "sierra": "S",
+                "tango": "T",
+                "uniform": "U",
+                "victor": "V",
+                "whiskey": "W",
+                "xray": "X",
+                "yankee": "Y",
+                "zulu": "Z",
+
+                // Pronounciation
+                "one": "1",
+                "two": "2",
+                "tree": "3",
+                "fower": "4",
+                "fife": "5",
+                "six": "6",
+                "seven": "7",
+                "eight": "8",
+                "niner": "9",
+                "zero": "0",
+                "decimal": ".", // Different from "stop" (period)
+            };
+        </script>
+        <script src="quiz.js"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Baybayin</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        /* Special case: Override regular Noto Sans */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap');
+        body {
+            font-family: "Noto Sans Tagalog";
+        }
+    </style>
+    <body>
+        <div id="question"></div>
+        <input type="text" id="answer"></input>
+        <div id="stats"></div>
+        <script>
+            // https://www.unicode.org/charts/PDF/U1700.pdf
+            // https://www.omniglot.com/writing/baybayin.htm
+
+            var caseInsensitive = true;
+
+            var dictionary = {
+                "a": "\u1700",
+                "i": "\u1701",
+                "u": "\u1702",
+                
+                "ka": "\u1703",
+                "ga": "\u1704",
+                "nga": "\u1705",
+                "ta": "\u1706",
+                "da": "\u1707", // Can also be ra. Later add functionality for multiple correct answers
+                "na": "\u1708",
+                "pa": "\u1709",
+                "ba": "\u170A",
+                "ma": "\u170B",
+                "ya": "\u170C",
+                "ra": "\u170D", // Modern
+                "la": "\u170E",
+                "wa": "\u170F",
+                "sa": "\u1710",
+                "ha": "\u1711",
+
+                // Can also be e
+                "ki": "\u1703\u1712",
+                "gi": "\u1704\u1712",
+                "ngi": "\u1705\u1712",
+                "ti": "\u1706\u1712",
+                "di": "\u1707\u1712", // Can also be ri. Later add functionality for multiple correct answers
+                "ni": "\u1708\u1712",
+                "pi": "\u1709\u1712",
+                "bi": "\u170A\u1712",
+                "mi": "\u170B\u1712",
+                "yi": "\u170C\u1712",
+                "ri": "\u170D\u1712", // Modern
+                "li": "\u170E\u1712",
+                "wi": "\u170F\u1712",
+                "si": "\u1710\u1712",
+                "hi": "\u1711\u1712",
+
+                // Can also be o
+                "ku": "\u1703\u1713",
+                "gu": "\u1704\u1713",
+                "ngu": "\u1705\u1713",
+                "tu": "\u1706\u1713",
+                "du": "\u1707\u1713", // Can also be ru. Later add functionality for multiple correct answers
+                "nu": "\u1708\u1713",
+                "pu": "\u1709\u1713",
+                "bu": "\u170A\u1713",
+                "mu": "\u170B\u1713",
+                "yu": "\u170C\u1713",
+                "ru": "\u170D\u1713", // Modern
+                "lu": "\u170E\u1713",
+                "wu": "\u170F\u1713",
+                "su": "\u1710\u1713",
+                "hu": "\u1711\u1713",
+
+                "k": "\u1703\u1714",
+                "g": "\u1704\u1714",
+                "ng": "\u1705\u1714",
+                "t": "\u1706\u1714",
+                "d": "\u1707\u1714", // Can also be r. Later add functionality for multiple correct answers
+                "n": "\u1708\u1714",
+                "p": "\u1709\u1714",
+                "b": "\u170A\u1714",
+                "m": "\u170B\u1714",
+                "y": "\u170C\u1714",
+                "r": "\u170D\u1714", // Modern
+                "l": "\u170E\u1714",
+                "w": "\u170F\u1714",
+                "s": "\u1710\u1714",
+                "h": "\u1711\u1714",
+            };
+        </script>
+        <script src="quiz.js"></script>
+    </body>
+</html>

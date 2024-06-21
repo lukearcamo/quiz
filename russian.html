@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Russian Cyrillic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="question"></div>
+        <input type="text" id="answer"></input>
+        <div id="stats"></div>
+        <script>
+            // https://en.wikipedia.org/wiki/Russian_alphabet#Letters
+
+            var caseInsensitive = false;
+
+            var dictionary = {
+                // Lowercase letters
+                "a": "а",
+                "b": "б",
+                "v": "в",
+                "g": "г",
+                "d": "д",
+                "ye": "е",
+                "yo": "ё",
+                "zh": "ж",
+                "z": "з",
+                "i": "и",
+                "y": "й",
+                "k": "к",
+                "l": "л",
+                "m": "м",
+                "n": "н",
+                "o": "о",
+                "p": "п",
+                "r": "р",
+                "s": "с",
+                "t": "т",
+                "u": "у",
+                "f": "ф",
+                "kh": "х",
+                "ts": "ц",
+                "ch": "ч",
+                "sh": "ш",
+                "shch": "щ",
+                "hard": "ъ",
+                "y": "ы",
+                "soft": "ь",
+                "e": "э",
+                "yu": "ю",
+                "ya": "я",
+
+                // Capital letters (comment out for only lowercase)
+                "A": "А",
+                "B": "Б",
+                "V": "В",
+                "G": "Г",
+                "D": "Д",
+                "Ye": "Е",
+                "Yo": "Ё",
+                "Zh": "Ж",
+                "Z": "З",
+                "I": "И",
+                "Y": "Й",
+                "K": "К",
+                "L": "Л",
+                "M": "М",
+                "N": "Н",
+                "O": "О",
+                "P": "П",
+                "R": "Р",
+                "S": "С",
+                "T": "Т",
+                "U": "У",
+                "F": "Ф",
+                "Kh": "Х",
+                "Ts": "Ц",
+                "Ch": "Ч",
+                "Sh": "Ш",
+                "Shch": "Щ",
+                "Hard": "Ъ",
+                "Y": "Ы",
+                "Soft": "Ь",
+                "E": "Э",
+                "Yu": "Ю",
+                "Ya": "Я",
+            };
+        </script>
+        <script src="quiz.js"></script>
+    </body>
+</html>
